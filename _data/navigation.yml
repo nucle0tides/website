@@ -1,0 +1,7 @@
+items:
+  - name: 'about'
+    path: '/about'
+  - name: 'resume'
+    path: '/resume'
+  - name: 'blog'
+    path: 'blog.'

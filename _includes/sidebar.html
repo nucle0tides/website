@@ -8,19 +8,15 @@
   <span class="author_job">{{ author.bio }}</span>
   <span class="author_bio mbm">{{ author.job }}</span>
   <nav class="nav">
-    <ul class="nav-list">
+    <ul class="nav-list"> 
+      {% for link in site.data.navigation.items %}
       <li class="nav-item">
-        <a href="{{ site.url }}/">home</a>
-        <span>/</span>
+        <a href ={{link.path | prepend:site.url}}>
+          {{ link.name }}
+        </a>
+        <span> / </span>
       </li>
-      {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-        {% unless forloop.last %}
-          <span>/</span>
-        {% endunless %}
-      </li>
-      {% endif %} {% endfor %}
+     {% endfor %}
     </ul>
   </nav>
   {% include social-links.html %}

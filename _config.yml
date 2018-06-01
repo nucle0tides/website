@@ -3,11 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: ~/blog
+title: ~/gabby
 email:
-description: Gabby Ortman's Blog
-url: # the base hostname & protocol for your site
-
+description: Homepage 
+url: 
 
 #
 ###################################
@@ -17,10 +16,8 @@ url: # the base hostname & protocol for your site
 timezone:          Central/Chicago
 markdown:          kramdown
 highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
 
-kramdown: 
+kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
@@ -35,7 +32,7 @@ kramdown:
 owner:
   name: Gabby Ortman
   avatar: avatar.jpg
-  job: "CS && Undergrad Research @ Iowa State University" 
+  job: "Software Engineer @ Red Nova Labs"
   bio: "there's no place like ~/"
   email:
   disqus-shortname:
@@ -50,8 +47,6 @@ owner:
   bing-verify:
   github: nucle0tides
   gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: gabbyortman
   skype: #username
   xing: #username
   instagram: gabby.ortman
