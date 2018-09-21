@@ -9,6 +9,7 @@ jobs:
     location: Kansas City, Missouri
     role: Software Engineer
     duration: January 2018 - Present
+    current: true
   - name: Cerner Corporation
     location: Kansas City, Missouri
     role: Software Engineering Intern

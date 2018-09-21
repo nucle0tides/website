@@ -7,17 +7,5 @@
   <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
   <span class="author_job">{{ author.bio }}</span>
   <span class="author_bio mbm">{{ author.job }}</span>
-  <nav class="nav">
-    <ul class="nav-list"> 
-      {% for link in site.data.navigation.items %}
-      <li class="nav-item">
-        <a href ={{link.path | prepend:site.url}}>
-          {{ link.name }}
-        </a>
-        <span> / </span>
-      </li>
-     {% endfor %}
-    </ul>
-  </nav>
   {% include social-links.html %}
 </div>
