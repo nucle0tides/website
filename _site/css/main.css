@@ -1536,6 +1536,9 @@ pre code {
       overflow-y: scroll;
       position: initial;
       top: 0; } }
+  .bio-container a {
+    text-decoration: underline;
+    font-weight: bold; }
 
 span {
   color: #B05574;
