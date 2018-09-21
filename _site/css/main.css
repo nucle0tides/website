@@ -1440,44 +1440,23 @@ pre code {
   .highlight .il {
     color: #666666; }
 
-/* LAYOUT CSS */
-.cover {
+.sidebar-container {
   background-color: #f5f5f5;
   position: fixed;
   text-align: center;
   width: 100%;
+  min-height: 400px;
   padding: 30px 15px 20px;
   z-index: 1; }
   @media only screen and (min-width: 600px) {
-    .cover {
+    .sidebar-container {
       background-position: center;
       padding: 30px; } }
   @media only screen and (min-width: 992px) {
-    .cover {
+    .sidebar-container {
       height: 100vh;
       position: initial;
       width: 100%; } }
-
-.basic-bio {
-  background-color: #fff;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  z-index: 233;
-  width: 100%;
-  padding: 30px 15px 20px; }
-  @media only screen and (min-width: 600px) {
-    .basic-bio {
-      padding: 50px 30px 0; } }
-  @media only screen and (min-width: 992px) {
-    .basic-bio {
-      height: 100vh;
-      overflow-y: scroll;
-      position: initial;
-      top: 0; } }
-  .basic-bio a {
-    font-weight: bold;
-    text-decoration: underline; }
 
 .cover-card {
   color: rgba(0, 0, 0, 0.87);
@@ -1537,6 +1516,26 @@ pre code {
       color: #5E9FA3; }
       .nav-list .nav-item a:hover, .nav-list .nav-item a:focus {
         color: #8bbabd; }
+
+.bio-container {
+  background-color: #fff;
+  position: absolute;
+  top: 400px;
+  z-index: 233;
+  width: 100%;
+  padding: 0 20px 0;
+  -webkit-transform: translate3d(0, 0, 1px);
+  transform: translate3d(0, 0, 1px);
+  text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .bio-container {
+      padding: 0 30px 0; } }
+  @media only screen and (min-width: 992px) {
+    .bio-container {
+      height: 100vh;
+      overflow-y: scroll;
+      position: initial;
+      top: 0; } }
 
 span {
   color: #B05574;
