@@ -22,19 +22,23 @@
 }
 
 .bioContainer {
-  position: relative;
-  top: 250px;
-  @include media-query(600px) {
-    padding: 0 30px 0;
-  }
-  @include media-query(768px) {
-    height: 100vh;
-    overflow-y: scroll;
-    position: initial;
-    top: 0;
-  }
+  margin: 5em 2em auto;
   a {
     text-decoration: underline;
     font-weight: bold;
+  }
+}
+
+.aboutMe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.avatarContainer {
+  img {
+    max-height: 500px;
   }
 }

@@ -5,7 +5,7 @@ import pius from '../assets/images/da boi.jpg';
 import pius3 from '../assets/images/da boi 3.jpg';
 import styles from './Avatar.scss';
 
-const Avatar = () => {
+const Avatar = ({...props}) => {
   const [idx, setImageIdx] = useState(0);
   const images = [pius, pius3];
 
@@ -19,6 +19,7 @@ const Avatar = () => {
     <Image
       src={image}
       roundedCircle
+      {...props}
     />
   );
 };
