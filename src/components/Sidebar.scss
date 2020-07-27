@@ -1,0 +1,16 @@
+.sidebar {
+  background-color: pink;
+  max-width: 25%;
+  flex: 0 0 5rem;
+  position: relative;
+  height: 100vh;
+}
+
+.avatarContainer {
+  width: 50px;
+  height: 50px;
+
+  img {
+    height: 50px;
+  }
+}

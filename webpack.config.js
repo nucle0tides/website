@@ -13,9 +13,28 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }
+        // https://webpack.js.org/loaders/sass-loader/
+        test: /\.s[ac]ss$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: true,
+            },
+          },
+          "sass-loader"
+        ]
+      },
+      {
+        // https://webpack.js.org/loaders/file-loader/
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
+      },
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
