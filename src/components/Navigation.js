@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 const Navigation = () => {
   return (
     <nav>
-      <Nav className="justify-content-end">
+      <Nav>
         <Nav.Item><Nav.Link>GitHub</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link>GitLab</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link>Keybase</Nav.Link></Nav.Item>

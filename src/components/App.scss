@@ -1,44 +1,30 @@
-@mixin media-query($device) {
-  @media only screen and (min-width: $device) {
-    @content;
-  }
-}
-.sidebarContainer {
-  background-color: pink;
-  position: fixed;
-  width: 100%;
-  min-height: 250px;
-  padding: 30px 15px 20px;
-  z-index: 1;
-  @include media-query(600px) {
-    background-position: center;
-    padding: 30px;
-  }
-  @include media-query(768px) {
-    height: 100vh;
-    position: initial;
-    width: 100%;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .bioContainer {
-  margin: 5em 2em auto;
-  a {
-    text-decoration: underline;
-    font-weight: bold;
-  }
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 10px;
 }
 
-.aboutMe {
+.navigationContainer {
+  justify-content: flex-end;
+}
+
+.intro {
+  // fix styling on smaller screens
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
 }
 
 .avatarContainer {
   img {
-    max-height: 500px;
+    max-height: 300px;
   }
 }

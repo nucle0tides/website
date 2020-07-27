@@ -23,8 +23,17 @@ module.exports = {
               modules: true,
             },
           },
-          "sass-loader"
-        ]
+          {
+            loader: "sass-loader",
+            options: {
+              // https://webpack.js.org/loaders/sass-loader/#additionaldata
+              additionalData: '@import "default";',
+              sassOptions: {
+                includePaths:[path.resolve(__dirname, 'src/components/')],
+              },
+            },
+          },
+        ],
       },
       {
         // https://webpack.js.org/loaders/file-loader/
@@ -51,3 +60,5 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };
+
+console.debug(module.exports.module.rules[1].use[2].options);

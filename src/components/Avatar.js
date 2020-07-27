@@ -18,7 +18,7 @@ const Avatar = ({...props}) => {
   return (
     <Image
       src={image}
-      roundedCircle
+      rounded 
       {...props}
     />
   );
