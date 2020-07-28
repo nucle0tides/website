@@ -2,7 +2,7 @@
   "name": "gabbyortman.com",
   "version": "1.0.0",
   "description": "a new website, but with react",
-  "main": "./src/index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development --progress",

@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 
+// prod setup for webpack: https://webpack.js.org/guides/production/
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
@@ -58,7 +59,6 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
+  // clean /dist with clean-webpack-plugin
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };
-
-console.debug(module.exports.module.rules[1].use[2].options);
