@@ -1,10 +1,11 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack");
 
-// prod setup for webpack: https://webpack.js.org/guides/production/
+// split up dev and prod builds
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  mode: 'production',
   module: {
     rules: [
       {
@@ -49,9 +50,8 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
-    filename: "bundle.js"
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
@@ -60,5 +60,10 @@ module.exports = {
     hotOnly: true
   },
   // clean /dist with clean-webpack-plugin
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  /* new webpack.HotModuleReplacementPlugin(), */
+  plugins: [new HtmlWebpackPlugin({
+    filename: "index.html",
+    template: path.resolve(__dirname, "./public/index.html"),
+    favicon: path.resolve(__dirname, "./public/favicon.ico")
+  })]
 };
