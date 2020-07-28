@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Intro.scss';
 
 const Intro = () => (
   <React.Fragment>
