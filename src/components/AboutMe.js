@@ -17,7 +17,7 @@ const AboutMe = () => (
       I studied computer science at <span>Iowa State University</span> and graduated in 2017. While there, I kept myself busy running <a href="http://digitalwomen.ece.iastate.edu/">Digital Women</a>, acting as a student liason on the <span>Computer Science Student Advisory Council</span>, participating in <span>hackathons</span>, and volunteering at STEM events.
         <br />
         <br />
-      Before <span>Storable</span>, I did three internships in Kansas City and one NSF REU at Iowa State University.
+      Before <span>Storable</span>, I did three software engineering internships in Kansas City and one NSF REU at Iowa State University.
     </p>
 
   </React.Fragment>

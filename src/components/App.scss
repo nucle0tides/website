@@ -14,7 +14,7 @@
 
 .navigationContainer {
   justify-content: flex-start;
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     justify-content: center;
   }
 }
@@ -22,6 +22,30 @@
 .intro {
   width: 100%;
   text-align: center;
+
+  h1 {
+    font-weight: 800;
+  }
+
+  h4 {
+    color: $primary;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-family: $font-family-monospace;
+    color: $secondary;
+    text-decoration: underline;
+    span {
+      font-size: 0.9rem;
+      color: darken($secondary, 10%);
+      &:after {
+        content: "\A\2003";
+        display: inline-block;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
     position: absolute;
     top: 50%;
@@ -34,7 +58,7 @@
   img {
     max-height: 300px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
   }
 }
@@ -42,12 +66,8 @@
 .aboutMeContainer {
   margin: auto;
   span {
+    font-weight: 600;
     color: $primary;
-  }
-
-  a {
-    font-family: $font-family-primary;
-    text-decoration: underline;
   }
   @media (max-width: 768px) {
     padding: 1rem 2rem;
