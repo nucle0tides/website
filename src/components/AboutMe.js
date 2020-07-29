@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './AboutMe.scss';
 
 const AboutMe = () => (
   <React.Fragment>
