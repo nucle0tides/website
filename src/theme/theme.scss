@@ -4,6 +4,10 @@ html, body {
   font-size: $font-size-base;
   font-family: $font-family-primary;
   font-weight: 600;
+  hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 a {

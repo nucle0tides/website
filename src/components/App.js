@@ -14,7 +14,7 @@ const App = () => (
     <header>
       <Row>
         <Col md={12} lg={5} className={styles.avatarContainer}>
-          <Avatar fluid/>
+          <Avatar fluid />
         </Col>
         <Col md={12} lg={7}>
           <div className={styles.intro}>
@@ -26,6 +26,7 @@ const App = () => (
     <Row className={styles.navigationContainer}>
       <Navigation />
     </Row>
+    <hr />
     <Row className={styles.aboutMeContainer}>
       <main>
         <AboutMe />

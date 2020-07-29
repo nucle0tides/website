@@ -5,12 +5,11 @@
   "description": "a new website, but with react",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --progress",
     "predeploy": "npm run build",
     "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist -v !CNAME",
-    "lint": "echo yeet"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -28,9 +27,16 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "file-loader": "^6.0.0",
     "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "js-beautify": "^1.11.0",
     "node-sass": "^4.14.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",

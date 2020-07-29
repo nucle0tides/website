@@ -21,6 +21,6 @@ const useInterval = (cb, delay) => {
       clearInterval(interval);
     };
   }, [delay]);
-}
+};
 
 export default useInterval;
