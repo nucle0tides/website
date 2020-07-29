@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --progress",
+    "build": "NODE_ENV=production webpack --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --progress",
     "predeploy": "npm run build",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d ./dist",
+    "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist -v !CNAME",
     "help": "gh-pages --help"
   },
   "repository": {

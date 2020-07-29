@@ -2,10 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack");
 
+const { NODE_ENV } = process.env;
+
 // split up dev and prod builds
 module.exports = {
   entry: "./src/index.js",
-  mode: 'production',
+  mode: NODE_ENV,
   module: {
     rules: [
       {
@@ -54,16 +56,18 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, "public"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
+    hotOnly: true,
   },
   // clean /dist with clean-webpack-plugin
-  /* new webpack.HotModuleReplacementPlugin(), */
-  plugins: [new HtmlWebpackPlugin({
-    filename: "index.html",
-    template: path.resolve(__dirname, "./public/index.html"),
-    favicon: path.resolve(__dirname, "./public/favicon.ico")
-  })]
+  plugins: [
+    NODE_ENV === 'development' && new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: path.join(__dirname, "public/index.html"),
+      favicon: path.join(__dirname, "public/favicon.ico")
+    })
+  ].filter(Boolean)
 };
