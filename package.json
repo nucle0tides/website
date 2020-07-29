@@ -10,7 +10,7 @@
     "dev": "NODE_ENV=development webpack-dev-server --mode development --progress",
     "predeploy": "npm run build",
     "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist -v !CNAME",
-    "help": "gh-pages --help"
+    "lint": "echo yeet"
   },
   "repository": {
     "type": "git",

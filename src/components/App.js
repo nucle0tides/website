@@ -6,7 +6,7 @@ import Intro from './Intro';
 import Navigation from './Navigation';
 import Avatar from './Avatar';
 import AboutMe from './AboutMe';
-import './theme.scss';
+import '../theme/theme.scss';
 import styles from './App.scss';
 
 const App = () => (

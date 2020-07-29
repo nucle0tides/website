@@ -32,7 +32,7 @@ module.exports = {
               // https://webpack.js.org/loaders/sass-loader/#additionaldata
               additionalData: '@import "default";',
               sassOptions: {
-                includePaths:[path.resolve(__dirname, 'src/components/')],
+                includePaths:[path.resolve(__dirname, 'src/theme/')],
               },
             },
           },
