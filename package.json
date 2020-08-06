@@ -7,8 +7,11 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --progress",
-    "predeploy": "npm run build",
-    "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist -v !CNAME",
+    "copy:CNAME": "cp ./CNAME ./dist/CNAME",
+    "copy:KEYBASE": "cp ./keybase.txt ./dist/keybase.txt",
+    "copy": "npm run copy:CNAME && npm run copy:KEYBASE",
+    "predeploy": "npm run copy && npm run build",
+    "deploy": "NODE_ENV=production NODE_DEBUG=gh-pages gh-pages -d ./dist",
     "lint": "eslint ./src"
   },
   "repository": {

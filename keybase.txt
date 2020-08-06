@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gabbyortman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gabbyortman.com
+  * I am gabbyortman (https://keybase.io/gabbyortman) on keybase.
+  * I have a public key ASBGAtADJjkPLEupSraY-jhLlc-H4Ud2h062J6nP4y5SFAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120162467f994b392adebd6174b4c3f589e57ae3af5b1f3cc30f6be2ea58d82bd730a",
+      "host": "keybase.io",
+      "kid": "01204602d00326390f2c4ba94ab698fa384b95cf87e14776874eb627a9cfe32e52140a",
+      "uid": "0255ff0e3d1556d97524624a0c36a619",
+      "username": "gabbyortman"
+    },
+    "merkle_root": {
+      "ctime": 1596676109,
+      "hash": "c232362a83db3ef5ff231e2bcb969a93ce6a7bfe083719ae406e167f2f65931c24ac18d52726b41951e5c7a3d7faece9984a33995731dff593fbc674a60c3d5b",
+      "hash_meta": "775ae44cad39756e8d5dc7ac0a244d323eb9a30b85abecf17cd40f074ad6dbca",
+      "seqno": 17197356
+    },
+    "service": {
+      "entropy": "SAUVVnVrCueo79ku2YnsRLSK",
+      "hostname": "gabbyortman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1596676114,
+  "expire_in": 504576000,
+  "prev": "00315ec76887bf1d8678513d341debb7330f4aec1557cba49bcc1bf6aba856ae",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRgLQAyY5DyxLqUq2mPo4S5XPh+FHdodOtiepz+MuUhQKp3BheWxvYWTESpcCGsQgADFex2iHvx2GeFE9NB3rtzMPSuwVV8ukm8wb9quoVq7EIEW0s7iJlgqwTVuxF3urtYW/RoHKsHkuYS9HA70iaPP1AgHCo3NpZ8RAcAdZXDl03f1H93jeGa7UA62X9DX+AkcUUsCxNfzXLmQkSxzEOXOp8OhgQDHzIgnU5bxE65rvz7+49yDMEoeEAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKKh1HNdIZGhQcikljFvxp4WesSNEBipyyKcx5p9oj2Eo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gabbyortman
+
+==================================================================
