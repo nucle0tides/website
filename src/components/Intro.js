@@ -5,7 +5,7 @@ import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 const Intro = () => (
   <React.Fragment>
     <h1>Gabby Ortman</h1>
-    <h4>Software Engineer @ Storable</h4>
+    <h4>Software Engineer</h4>
     <h6>
       <span>
         <FontAwesomeIcon icon={faMapMarker} />

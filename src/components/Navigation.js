@@ -15,8 +15,8 @@ const Navigation = () => (
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="https://keybase.io/gabbyortman" target="_blank" rel="noreferrer noopener">
-          Keybase
+        <Nav.Link href="https://www.linkedin.com/in/gabby-ortman" target="_blank" rel="noreferrer noopener">
+          LinkedIn 
         </Nav.Link>
       </Nav.Item>
     </Nav>
