@@ -1,5 +1,7 @@
-export default function Home() {
+import { IndexPage } from "@/index/page";
+
+export default function Index() {
   return (
-    <div>hello, world!</div>
+    <IndexPage />
   )
 }

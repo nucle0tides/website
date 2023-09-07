@@ -1,5 +1,5 @@
-import "../theme/src/styles/global-reset.css"
-import { ThemeProvider } from "@/theme/src/provider";
+import "../theme/styles/global-reset.css"
+import { ThemeProvider } from "@/theme/provider";
 
 export const metadata = {
   title: "~/gabby",
