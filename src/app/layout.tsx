@@ -1,3 +1,4 @@
+import "../theme/src/styles/global-reset.css"
 import { ThemeProvider } from "@/theme/src/provider";
 
 export const metadata = {
