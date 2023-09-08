@@ -2,6 +2,9 @@ import { Avatar } from "../components/Avatar"
 
 export const IndexPage = () => {
   return (
-    <Avatar />
+    <>
+       <Avatar /> 
+       <span>hello, world!</span>
+    </>
   )
 }
