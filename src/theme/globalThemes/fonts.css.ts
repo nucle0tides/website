@@ -10,7 +10,6 @@ export const fontTheme = createGlobalTheme(":root", {
   font: {
     face: fontFaces,
     weight: {
-      logo: "300",
       display: {
         default: "400",
         strong: "600",
@@ -44,18 +43,6 @@ export const fontTheme = createGlobalTheme(":root", {
         sm: "14px",
         md: "18px",
         lg: "24px",
-      },
-    },
-    lineHeight: {
-      label: "1",
-      paragraph: {
-        xs: "20px",
-        sm: "24px",
-        md: "30px",
-        lg: "34px",
-        xl: "44px",
-        xxl: "52px",
-        xxxl: "72px",
       },
     },
   },

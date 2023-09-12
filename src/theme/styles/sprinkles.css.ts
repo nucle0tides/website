@@ -1,6 +1,8 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 
 import { t } from ".";
+import { fontFaces } from "../globalThemes/fonts.css";
+import { styleVariants } from "@vanilla-extract/css";
 
 const conditions = {
   conditions: {
@@ -15,6 +17,27 @@ const conditions = {
   },
   defaultCondition: "initial",
 } as const;
+
+const bodyVariants = [
+  "lg",
+  "md",
+  "sm",
+  "xs",
+] as const;
+const displayVariants = [
+  "disp-xxxl",
+  "disp-xxl",
+  "disp-xl",
+  "disp-lg",
+  "disp-md",
+  "disp-sm",
+] as const;
+const codeVariants = [
+  "code-lg",
+  "code-md",
+  "code-sm",
+  "code-xs",
+] as const;
 
 export const properties = {
   size: defineProperties({

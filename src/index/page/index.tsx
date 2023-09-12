@@ -1,10 +1,12 @@
+import { sprinkles } from "@/theme"
 import { Avatar } from "../components/Avatar"
+import clsx from "clsx"
 
 export const IndexPage = () => {
   return (
     <>
        <Avatar /> 
-       <span>hello, world!</span>
+      <span className={clsx(sprinkles({ }))}>hello, world!</span>
     </>
   )
 }
